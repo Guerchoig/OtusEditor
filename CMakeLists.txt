@@ -16,7 +16,7 @@ project(editor VERSION ${PROJECT_VESRION})
 
 # configure_file(config.h.in config.h)
 
-add_executable(editor main.cpp)
+add_executable(editor editor.cpp)
 # add_library(editor_lib editor_lib.cpp)
 # add_executable(test_editor test_editor.cpp)
 
