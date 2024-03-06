@@ -1,29 +1,26 @@
-#include "graphics_general.h"
+#pragma once
+
+#include "general.h"
+#include "view.h"
 #include <string>
 #include <iostream>
 
-class ILabel{
-private:
-    std::string label;
-public:
-    void show(){std::cout << label << '\n';}
-};
-
-class ICommand {
+class ICommand
+{
 public:
     virtual void execute() = 0;
     virtual ~ICommand() = default;
 };
 
-class base_control:rect, ILabel
+class base_control : simply_showable
 {
 private:
     ICommand *p_command;
+
 public:
-    base_control(ICommand *p_command) : p_command(p_command){}
+    base_control(ICommand *p_command, std::string _label) : p_command(p_command)
+    {
+        label = _label;
+    }
     virtual ~base_control() = default;
 };
-
-class Hexagone;
-
-
