@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.10)
 set(PATCH_VERSION "0" CACHE INTERNAL "Patch version")
 set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 
-project(editor VERSION ${PROJECT_VESRION})
+project(main VERSION ${PROJECT_VESRION})
 
 # include(FetchContent)
 # FetchContent_Declare(
@@ -16,33 +16,33 @@ project(editor VERSION ${PROJECT_VESRION})
 
 # configure_file(config.h.in config.h)
 
-add_executable(editor editor.cpp)
-# add_library(editor_lib editor_lib.cpp)
-# add_executable(test_editor test_editor.cpp)
+add_executable(main main.cpp)
+# add_library(main_lib main_lib.cpp)
+# add_executable(test_main test_main.cpp)
 
-set_target_properties(editor  PROPERTIES
+set_target_properties(main  PROPERTIES
     CXX_STANDARD 20
     CXX_STANDARD_REQUIRED ON
 )
-target_include_directories(editor
+target_include_directories(main
     PRIVATE "${CMAKE_BINARY_DIR}"
 )
 
-# target_link_libraries(editor PRIVATE editor_lib)
-# target_link_libraries(test_editor
+# target_link_libraries(main PRIVATE main_lib)
+# target_link_libraries(test_main
 #     GTest::gtest_main
-#     editor_lib
+#     main_lib
 # )
 
 if (MSVC)
-    target_compile_options(editor PRIVATE
+    target_compile_options(main PRIVATE
         /W4
     )
-    #  target_compile_options(test_editor PRIVATE
+    #  target_compile_options(test_main PRIVATE
     #     /W4
     # )
 else ()
-    target_compile_options(editor PRIVATE
+    target_compile_options(main PRIVATE
         -Wall -Wextra -pedantic -Werror
     )
     
@@ -50,7 +50,7 @@ endif()
 
 
 
-install(TARGETS editor RUNTIME DESTINATION bin)
+install(TARGETS main RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
@@ -64,8 +64,8 @@ include(CPack)
 
 # enable_testing()
 # include(GoogleTest)
-# gtest_discover_tests(test_editor)
-# add_test(test_editor  test_editor)
+# gtest_discover_tests(test_main)
+# add_test(test_main  test_main)
 
 
 
