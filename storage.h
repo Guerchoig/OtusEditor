@@ -15,6 +15,7 @@ namespace stg
     public:
         virtual void export_doc(const serialized_t &doc, const path_t &path) = 0;
         virtual serialized_t import_doc(const path_t &path) = 0;
+        virtual ~IStorage() {}
     };
 
     class FileStorage : IStorage
