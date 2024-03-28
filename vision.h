@@ -21,13 +21,15 @@ namespace vi
     class IView
     {
     public:
+        /// @brief updates the view in show_t format
         virtual void update_view() = 0;
-        virtual void display() = 0; // displays the prepared view on the screen
+
+        /// @brief displays the the view in show_t format on the screen
+        virtual void display() = 0;
         virtual ~IView(){};
     };
 
     /// @brief Entity, representing an object in a text view
-
     class TextView : public IView
     {
 
