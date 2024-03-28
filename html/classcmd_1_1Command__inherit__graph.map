@@ -1,0 +1,12 @@
+<map id="cmd::Command" name="cmd::Command">
+<area shape="rect" id="node1" title="Prototype class for all commands make it possible to visualise commands execution." alt="" coords="309,132,435,159"/>
+<area shape="rect" id="node5" href="$classcmd_1_1AddRect.html" title="Adds a rectangle to the collection of gliphs." alt="" coords="505,5,617,32"/>
+<area shape="rect" id="node6" href="$classcmd_1_1DeleteFigure.html" title="Deletes choosen figure from the collection of gliphs." alt="" coords="491,56,632,83"/>
+<area shape="rect" id="node7" href="$classcmd_1_1Exit.html" title="&quot;Exit application&quot; command" alt="" coords="520,107,603,133"/>
+<area shape="rect" id="node8" href="$classcmd_1_1ExportToFile.html" title="Exports the file using storage interface and serialization." alt="" coords="493,157,630,184"/>
+<area shape="rect" id="node9" href="$classcmd_1_1ImportFromFile.html" title="Imports the file using storage interface and deserialization." alt="" coords="483,208,640,235"/>
+<area shape="rect" id="node10" href="$classcmd_1_1NewDoc.html" title="Constructs new doc in&#45;place." alt="" coords="505,259,617,285"/>
+<area shape="rect" id="node2" href="$classcmd_1_1ICommand.html" title="Abstract command interface." alt="" coords="132,107,261,133"/>
+<area shape="rect" id="node3" href="$classvi_1_1TextView.html" title="Entity, representing an object in a text view." alt="" coords="146,157,247,184"/>
+<area shape="rect" id="node4" href="$classvi_1_1IView.html" title="Abstract interface to output objects in any view." alt="" coords="5,157,84,184"/>
+</map>

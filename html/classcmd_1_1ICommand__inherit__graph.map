@@ -1,0 +1,10 @@
+<map id="cmd::ICommand" name="cmd::ICommand">
+<area shape="rect" id="node1" title="Abstract command interface." alt="" coords="5,132,135,159"/>
+<area shape="rect" id="node2" href="$classcmd_1_1Command.html" title="Prototype class for all commands make it possible to visualise commands execution." alt="" coords="183,132,308,159"/>
+<area shape="rect" id="node3" href="$classcmd_1_1AddRect.html" title="Adds a rectangle to the collection of gliphs." alt="" coords="379,5,491,32"/>
+<area shape="rect" id="node4" href="$classcmd_1_1DeleteFigure.html" title="Deletes choosen figure from the collection of gliphs." alt="" coords="364,56,505,83"/>
+<area shape="rect" id="node5" href="$classcmd_1_1Exit.html" title="&quot;Exit application&quot; command" alt="" coords="393,107,476,133"/>
+<area shape="rect" id="node6" href="$classcmd_1_1ExportToFile.html" title="Exports the file using storage interface and serialization." alt="" coords="366,157,503,184"/>
+<area shape="rect" id="node7" href="$classcmd_1_1ImportFromFile.html" title="Imports the file using storage interface and deserialization." alt="" coords="356,208,513,235"/>
+<area shape="rect" id="node8" href="$classcmd_1_1NewDoc.html" title="Constructs new doc in&#45;place." alt="" coords="379,259,491,285"/>
+</map>

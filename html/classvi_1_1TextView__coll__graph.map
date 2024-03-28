@@ -1,0 +1,4 @@
+<map id="vi::TextView" name="vi::TextView">
+<area shape="rect" id="node1" title="Entity, representing an object in a text view." alt="" coords="5,80,107,107"/>
+<area shape="rect" id="node2" href="$classvi_1_1IView.html" title="Abstract interface to output objects in any view." alt="" coords="17,5,95,32"/>
+</map>

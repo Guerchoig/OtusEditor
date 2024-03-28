@@ -1,0 +1,7 @@
+<map id="cmd::DeleteFigure" name="cmd::DeleteFigure">
+<area shape="rect" id="node1" title="Deletes choosen figure from the collection of gliphs." alt="" coords="69,229,210,256"/>
+<area shape="rect" id="node2" href="$classcmd_1_1Command.html" title="Prototype class for all commands make it possible to visualise commands execution." alt="" coords="77,155,202,181"/>
+<area shape="rect" id="node3" href="$classcmd_1_1ICommand.html" title="Abstract command interface." alt="" coords="5,80,135,107"/>
+<area shape="rect" id="node4" href="$classvi_1_1TextView.html" title="Entity, representing an object in a text view." alt="" coords="159,80,261,107"/>
+<area shape="rect" id="node5" href="$classvi_1_1IView.html" title="Abstract interface to output objects in any view." alt="" coords="171,5,249,32"/>
+</map>
