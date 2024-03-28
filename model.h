@@ -1,3 +1,4 @@
+/// @brief The file contains business model of the app
 #pragma once
 #include "error.h"
 #include "vision.h"
@@ -8,6 +9,7 @@
 #include <sstream>
 #include <map>
 
+/// @brief Namespace contains business model of the app
 namespace mod
 {
     enum class FigType
@@ -19,7 +21,7 @@ namespace mod
     class Document;
     using spdoc_t = std::shared_ptr<mod::Document>;
 
-    // A parent class for any object, which can be put onto the drawing canvas
+    /// @brief A parent class for any object, which can be put onto the drawing canvas
     class Gliph : public vi::TextView
     {
     protected:
@@ -64,7 +66,7 @@ namespace mod
         }
     };
 
-    // A rectangle
+    /// @brief  A rectangle
     class Rect : public Gliph
     {
     protected:
@@ -85,8 +87,8 @@ namespace mod
     using p_gliph_t = std::shared_ptr<Gliph>;
     using gliphs_t = std::vector<std::shared_ptr<Gliph>>;
 
-    // A collection, which receive gliphs,
-    // being created elsewhere
+    /// @brief  A collection, which receive gliphs,
+    /// being created elsewhere
     class GliphsCollection
     {
 
@@ -118,6 +120,7 @@ namespace mod
         }
     };
 
+    /// @brief Implements doc, which contains gliphs collection
     class Document : public vi::TextView
     {
     private:

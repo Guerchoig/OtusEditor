@@ -1,4 +1,4 @@
-/// @brief Module contents command interface
+/// @brief This module contains command interface
 /// and the main function
 
 #include "vision.h"
@@ -12,6 +12,7 @@
 #include <memory>
 #include <utility>
 
+/// @brief Namespase contains command interface
 namespace cmd
 {
 
@@ -175,9 +176,12 @@ namespace cmd
         }
     };
 }
+
+/// @brief Encapsulate app functionality
 class App
 {
 private:
+    /// @brief Command queue
     class Queue
     {
     private:
@@ -220,7 +224,7 @@ public:
         return 0;
     }
 
-    // Test command pool
+    /// @brief Test command pool
     void prepare_test_run()
     {
         cmd_q.push_command(std::shared_ptr<cmd::Command>(new cmd::NewDoc(p_doc)));

@@ -1,12 +1,12 @@
+/// @brief A representation module
 #pragma once
-
 #include <string>
 #include <iostream>
 #include <memory>
 
 namespace vi
 {
-    // Square place on screen
+    /// @brief Square place on screen
     struct Place
     {
         int left;
@@ -17,7 +17,7 @@ namespace vi
 
     using show_t = std::string;
 
-    // Abstract interface to output objects in any view
+    /// @brief Abstract interface to output objects in any view
     class IView
     {
     public:
@@ -26,7 +26,7 @@ namespace vi
         virtual ~IView(){};
     };
 
-    // Entity, representing an object in a text view
+    /// @brief Entity, representing an object in a text view
 
     class TextView : public IView
     {
